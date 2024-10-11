@@ -7,10 +7,21 @@ void init_code() {
 	#ifndef ONLINE_JUDGE
 	freopen("input.txt", "r", stdin);
 	freopen("output.txt", "w", stdout);
+	freopen("error.txt", "w", stderr);
 	#endif
 }
 
 int main(){
 	init_code();
+	int n ;
+	cin >> n;
 
+	for (int row = 0; row < n; row++)
+	{
+		for (int col = n-1; col >= row; col--)
+		{
+			cout << "* ";
+		}
+		cout<<endl;
+	}
 }
