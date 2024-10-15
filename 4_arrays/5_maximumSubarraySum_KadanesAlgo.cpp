@@ -1,8 +1,23 @@
 #include <iostream>
+#include <climits>
 using namespace std;
 
 int maximumSubarraySumKadane(int arr[], int n){
+    int sum = 0;
+    int maxi = INT_MIN;
 
+    for (int i = 0; i < n; i++)
+    {
+        sum = sum + arr[i];
+        maxi = max(maxi, sum);
+
+        if (sum<0)
+        {
+            sum = 0;
+        }
+        
+    }
+    return maxi;
 }
 
 
@@ -16,9 +31,9 @@ int main() {
         cin >> arr[i];
     }
 
-    int maximumSubarraySumKadane(arr, n);
+    int result = maximumSubarraySumKadane(arr, n);
 
-    cout << max << endl;
+    cout << result << endl;
 
     return 0;
 }
