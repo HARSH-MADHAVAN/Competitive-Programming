@@ -2,6 +2,12 @@
 #include <climits>
 using namespace std;
 
+/*
+    SAMPLE INPUT: -
+	9
+	-2 1 -3 4 -1 2 1 -5 4
+*/
+
 int maximumSubarraySumKadane(int arr[], int n){
     int sum = 0;
     int maxi = INT_MIN;
