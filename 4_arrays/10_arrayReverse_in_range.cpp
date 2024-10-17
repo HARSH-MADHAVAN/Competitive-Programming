@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int reverseArrayinRange(int arr[],int i,int j){
+void reverseArrayinRange(int arr[],int i,int j){
     while(i<j){
         swap(arr[i], arr[j]);
         i++;

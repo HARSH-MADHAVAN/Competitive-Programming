@@ -3,7 +3,7 @@ using namespace std;
 // number of steps = n/2;
 // Time complexity = O(n)
 
-int reverseArray(int arr[], int n){
+void reverseArray(int arr[], int n){
     int i = 0;
     int j = n - 1;
 
