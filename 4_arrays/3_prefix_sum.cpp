@@ -9,6 +9,8 @@ using namespace std;
 	
 */
 
+// prefix sum also known as cumulative sum
+
 int main() {
     int n;
     cin >> n;

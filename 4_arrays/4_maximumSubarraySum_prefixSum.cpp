@@ -9,6 +9,8 @@ using namespace std;
 	
 */
 
+// Prefix sum also known as cumulative sum
+
 int maximumSubarraySum(int arr[], int n, int csum[]){
 
     int max = INT_MIN;
